@@ -1,12 +1,11 @@
 import React from "react"
-import {Circles, Rectangles} from "./examples"
+import { SmileyFace } from "./Examples";
 
 const App = () => {
   return (
-    <div>
-      <Circles />
-      <Rectangles />
-    </div>
+    <React.Fragment>
+      <SmileyFace/>
+    </React.Fragment>
   );
 }
 
