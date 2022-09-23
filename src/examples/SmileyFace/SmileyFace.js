@@ -9,34 +9,33 @@ const SmileyFace = () => {
     useEffect(() => {
         const svg = select(svgRef.current)
 
-        const circle = svg.append('circle')
+        const g = svg.append('g')
+        g
+            .attr('transform', `translate(${$(svgRef.current).width() / 2}, ${$(svgRef.current).height() / 2})`)
+            .attr('translate')
+
+        const circle = g.append('circle')
         circle
             .attr('r', $(svgRef.current).height() / 2)
-            .attr('cx', $(svgRef.current).width() / 2)
-            .attr('cy', $(svgRef.current).height() / 2)
             .attr('fill', 'yellow')
             .attr('stroke', 'black')
 
-        const leftEye = svg.append('circle')
-        leftEye
-            .attr('r', $(svgRef.current).height() / 16)
-            .attr('cx', $(svgRef.current).width() / 2 - $(svgRef.current).height() / 6)
-            .attr('cy', $(svgRef.current).height() / 2 - $(svgRef.current).height() / 15 * 2)
+        const eg = g.append('g');
+        eg
+            .attr('transform', `translate(0, ${- $(svgRef.current).height() / 15 * 2})`)
             .attr('fill', 'black')
             .attr('stroke', 'black')
 
-        const rightEye = svg.append('circle')
+        const leftEye = eg.append('circle')
+        leftEye
+            .attr('r', $(svgRef.current).height() / 16)
+            .attr('cx', - $(svgRef.current).height() / 6)
+
+        const rightEye = eg.append('circle')
         rightEye
             .attr('r', $(svgRef.current).height() / 16)
-            .attr('cx', $(svgRef.current).width() / 2 + $(svgRef.current).height() / 6)
-            .attr('cy', $(svgRef.current).height() / 2 - $(svgRef.current).height() / 15 * 2)
-            .attr('fill', 'black')
-            .attr('stroke', 'black')
+            .attr('cx', $(svgRef.current).height() / 6)
         
-        const g = svg.append('g')
-            g
-                .attr('transform', `translate(${$(svgRef.current).width() / 2}, ${$(svgRef.current).height() / 2})`)
-                .attr('translate')
         const mouth = g.append('path')
         mouth
             .attr('d', arc()({
