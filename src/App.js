@@ -1,10 +1,11 @@
 import React from "react"
-import { SmileyFace } from "./Examples";
+import { SmileyFace, BarChart } from "./Examples";
 
 const App = () => {
   return (
     <React.Fragment>
-      <SmileyFace/>
+      {/* <SmileyFace/> */}
+      <BarChart />
     </React.Fragment>
   );
 }
