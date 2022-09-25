@@ -1,12 +1,18 @@
 import React from "react"
-import { SmileyFace, BarChart, ScatterPlot } from "./Examples";
+import { 
+  SmileyFace, 
+  BarChart, 
+  ScatterPlot, 
+  Quantitative 
+} from "./Examples";
 
 const App = () => {
   return (
     <React.Fragment>
       {/* <SmileyFace/> */}
       {/* <BarChart /> */}
-      <ScatterPlot />
+      {/* <ScatterPlot /> */}
+      <Quantitative />
     </React.Fragment>
   );
 }

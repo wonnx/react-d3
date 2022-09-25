@@ -15,3 +15,6 @@ What tasks should the viewer be able to perform?
 ### The bar chart example
 This bar chart shows population of the top 10 most populous countires. The data comes from the year 2018 estimate in [United Nations: World Population Prospects 2017](https://esa.un.org/unpd/wpp/Download/Standard/Population/).  
 [data visualization style guideline: sunrize](https://sunlightfoundation.com/2014/03/12/datavizguide/)
+
+#### The scatter plot example (Also quantitative example)
+Thie scatter plot shows data about cars, from [UCI Machine Learning Repository: Auto MPG Data Set](http://mlr.cs.umass.edu/ml/datasets/Auto+MGP).
