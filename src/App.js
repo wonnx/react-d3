@@ -3,7 +3,8 @@ import {
   SmileyFace, 
   BarChart, 
   ScatterPlot, 
-  Quantitative 
+  Quantitative, 
+  LineChart
 } from "./Examples";
 
 const App = () => {
@@ -12,7 +13,8 @@ const App = () => {
       {/* <SmileyFace/> */}
       {/* <BarChart /> */}
       {/* <ScatterPlot /> */}
-      <Quantitative />
+      {/* <Quantitative /> */}
+      <LineChart />
     </React.Fragment>
   );
 }

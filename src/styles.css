@@ -37,3 +37,11 @@ text {
     font-weight: bold;
     fill: #635F5D;
 }
+
+.line-path {
+    fill: none;
+    stroke: rebeccapurple;
+    stroke-width: 4;
+    stroke-linejoin: round;
+    opacity: 0.5;
+}
