@@ -4,7 +4,8 @@ import {
   BarChart, 
   ScatterPlot, 
   Quantitative, 
-  LineChart
+  LineChart,
+  AreaChart
 } from "./Examples";
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
       {/* <BarChart /> */}
       {/* <ScatterPlot /> */}
       {/* <Quantitative /> */}
-      <LineChart />
+      {/* <LineChart /> */}
+      <AreaChart />
     </React.Fragment>
   );
 }

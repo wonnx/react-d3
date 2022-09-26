@@ -45,3 +45,11 @@ text {
     stroke-linejoin: round;
     opacity: 0.5;
 }
+
+.area {
+    fill: rebeccapurple;
+    stroke: rebeccapurple;
+    stroke-width: 4;
+    stroke-linejoin: round;
+    opacity: 0.5;
+}
