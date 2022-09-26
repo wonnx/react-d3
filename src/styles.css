@@ -2,10 +2,10 @@ rect {
     fill: steelblue;
 }
 
-circle {
+/* circle {
     fill: palevioletred;
     opacity: 0.3;
-}
+} */
 
 text {
     font-family: sans-serif;
@@ -52,4 +52,14 @@ text {
     stroke-width: 4;
     stroke-linejoin: round;
     opacity: 0.5;
+}
+
+.fruit-text {
+    font-size: 3em;
+    text-anchor: middle;
+}
+
+.bowl-rect {
+    fill: black;
+    opacity: 0.9;
 }
